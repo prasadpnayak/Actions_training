@@ -27,5 +27,5 @@ jobs:
       - name: Matrix info being used
         run: echo "Matrix infromation is ${{ toJSON(env) }}"
       - name: Github info
-        run: echo "{{ toJSON(Matrix) }}"
+        run: echo "{{ toJSON(github) }}"
 
