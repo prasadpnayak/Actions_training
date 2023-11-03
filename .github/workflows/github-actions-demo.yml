@@ -22,3 +22,10 @@ jobs:
         run: |
           echo "The repository ${{ github.repository }} contains the following files:"
           tree
+      - name: Runner being used
+        run: echo "Runner infromation is ${{ toJSON(Runner) }}"
+      - name: Matrix info being used
+        run: echo "Matrix infromation is ${{ toJSON(env) }}"
+      - name: Github info
+        run: echo "{{ toJSON(Matrix) }}"
+
